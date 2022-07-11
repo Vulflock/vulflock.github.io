@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Vulflok</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8"/>
+</head>
+
+<style>
+
+@font-face
+{
+    font-family: PublicPixel;
+    src: url("assets/PublicPixel.ttf");
+}
+
+/* Add a gray background color to the top navigation */
+.navigation
+	{
+		background-color: #333;
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+/* Style the links inside the navigation bar */
+.navigation a
+	{
+		float: left;
+		color: white;
+        text-align: center;
+		padding: 1% 2%;
+		text-decoration: none;
+        font-family: PublicPixel;
+		font-size: 110%;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+	}
+
+/* Change the color of links on hover */
+.navigation a:hover
+	{
+		background-color: gray;
+		color: #333;
+	}
+/* Add a color to the active/current link */
+.navigation a.active
+	{
+		background-color: rgb(100, 100, 100);
+		color: white;
+	}
+
+
+</style>
+
+<body style="background-color:rgb(23, 26, 30)">
+    <Img style="image-rendering: pixelated; position: absolute; left: 0px; top: 40px;" src="assets/vulflock-banner.png" width="100%">
+    <div class="navigation">
+
+        <a style="border: none; padding: 0px 0px; float: none;" href="index.html">
+        <img style="float:left; width: 44px; height: auto; image-rendering: pixelated;" src="assets/vulflock-logo.png" alt="Logo">
+        </a>
+
+        <a href="index.html">Home</a>
+        <a class="active" href="games.html">Games</a>
+        <a href="index.html">2D Art</a>
+        <a href="index.html">3D Art</a>
+        <a href="index.html">Mods</a>
+    </div>
+
+	<div style="position: absolute; top: 500px; left: 25%;">
+		<table>
+			<tr>
+				<td>
+					<iframe src="https://itch.io/embed/1067576?linkback=true&amp;bg_color=000000&amp;fg_color=acd1a4&amp;link_color=62fa5b&amp;border_color=41624b" width="552" height="167" frameborder="0"><a href="https://vulflock.itch.io/rust-dungeon">Rust Dungeon by Vulflock</a></iframe>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<iframe src="https://itch.io/embed/1579538?linkback=true&amp;dark=true" width="552" height="167" frameborder="0"><a href="https://vulflock.itch.io/ftl-system">FTL-System by Vulflock</a></iframe>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
